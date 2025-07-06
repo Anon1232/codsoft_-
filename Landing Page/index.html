@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MindGarden 🌿</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🌿 Entry Page -->
+  <div id="entry-screen">
+    <h1>Welcome to MindGarden</h1>
+    <p>Grow your thoughts. Water your mind. 🌱</p>
+    <button onclick="enterGarden()">Enter Garden</button>
+  </div>
+
+  <!-- 🧠 Main App -->
+  <div id="main-app">
+    <header>
+      <h1>MindGarden 🌿</h1>
+    </header>
+
+    <aside>
+      <nav>
+        <ul>
+          <li><a href="#goals">Goals</a></li>
+          <li><a href="#habits">Habits</a></li>
+          <li><a href="#journal">Journal</a></li>
+          <li><a href="#progress">Progress</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main>
+      <section id="goals" class="dropdown">
+        <h2 onclick="toggleDropdown('goals')">🌱 Set Your Goals</h2>
+        <div class="dropdown-content">
+          <p>Define your growth this season. Make them small, real, and joyful.</p>
+          <ul>
+            <li>Read 10 pages every day</li>
+            <li>Drink 2L of water</li>
+            <li>Do 10 mins of mindful breathing</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="habits" class="dropdown">
+        <h2 onclick="toggleDropdown('habits')">🪴 Build Better Habits</h2>
+        <div class="dropdown-content">
+          <p>Track and repeat. Good habits are like watering a plant daily 🌧️</p>
+          <ul>
+            <li>Wake up by 7AM</li>
+            <li>No phone 1st hour</li>
+            <li>Night journaling</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="journal">
+        <h2>🌿 Journal Your Growth</h2>
+        <p>Write your thoughts, your feels, your little wins or storms.</p>
+        <textarea placeholder="How was your day? Be honest 🌧️🌤️🌞"></textarea>
+      </section>
+
+      <section id="progress" class="dropdown">
+        <h2 onclick="toggleDropdown('progress')">🌼 Track Your Progress</h2>
+        <div class="dropdown-content">
+          <div class="progress-bar-container">
+            <div class="label">Focus</div>
+            <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+
+            <div class="label">Consistency</div>
+            <div class="bar"><div class="fill" style="width: 65%;"></div></div>
+
+            <div class="label">Well-being</div>
+            <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
