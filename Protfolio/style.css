@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f8ff;
+  color: #2d2d2d;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #e6f0ff;
+  padding: 30px 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 3px 0 10px rgba(0,0,0,0.05);
+}
+
+.sidebar h2 {
+  color: #0b3954;
+  margin-bottom: 30px;
+}
+
+.sidebar nav a {
+  display: block;
+  color: #0b3954;
+  margin: 18px 0;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.sidebar nav a:hover {
+  color: #ff6b6b;
+  transform: translateX(8px);
+}
+
+/* Main */
+.main {
+  margin-left: 240px;
+  padding: 40px;
+  width: calc(100% - 240px);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #114b5f;
+}
+
+/* Sections */
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #1a4f63;
+}
+
+p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Skills */
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.bar {
+  width: 100%;
+  height: 14px;
+  background-color: #d8ecff;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.fill {
+  height: 100%;
+  background: linear-gradient(to right, #00c9a7, #ff6b6b);
+  width: 0;
+  border-radius: 7px;
+  transition: width 1.5s ease-in-out;
+}
+
+/* Projects */
+.projects-list {
+  list-style: none;
+}
+
+.projects-list li {
+  background: #fff8f8;
+  padding: 10px 15px;
+  border-left: 4px solid #ff6b6b;
+  margin-bottom: 12px;
+  border-radius: 6px;
+}
+
+/* Resume */
+.resume-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #00c9a7;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: #ff6b6b;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.download-btn:hover {
+  background: #e75a5a;
+}
